@@ -1,6 +1,7 @@
 #pragma once
 
 #include "stddef.h"
+#include <iostream>
 
 //jds = jules data structures
 namespace jds
@@ -49,35 +50,34 @@ namespace jds
     class LinkedList<T>::Iterator
     {
         private:
-            Node* current;
+            Node* _current;
         public:
-            Iterator(Node* node = nullptr) : current(node) {}
+            Iterator(Node* node = nullptr) : _current(node) {}
 
             //Iterating behavior
             Iterator& operator++()
             {
-                current = current->nextNode;
+                _current = _current->nextNode;
                 return *this;
             }
 
             //Used to access the data by reference
-            T& operator*() { return current->data; }
+            T& operator*() { return _current->data; }
 
             //Used to access the data via pointer
-            T* operator->() { return &current->data; }
+            T* operator->() { return &_current->data; }
 
             //Inequality operator generally used as a condition to stop the loop
-            bool operator!=(const Iterator& other) const { return current != other.current; }
+            bool operator!=(const Iterator& other) const { return _current != other._current; }
 
             //Equality operator generally used as a condition to stop the loop
-            bool operator==(const Iterator& other) const { return current == other.current; }
+            bool operator==(const Iterator& other) const { return _current == other._current; }
     };
 
     template <typename T>
     LinkedList<T>::~LinkedList()
     {
         struct Node* current = _headNode;
-
         while (current != nullptr)
         {
             struct Node* next = current->nextNode;

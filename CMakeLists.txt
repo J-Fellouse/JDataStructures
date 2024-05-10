@@ -11,7 +11,8 @@ include_directories(include)
 
 set(SOURCE_FILES
 "src/main.cpp"
-"include/LinkedList.hpp")
+"include/LinkedList.hpp"
+"include/StaticHashMap.hpp")
 
 add_executable(JDataStructures ${SOURCE_FILES})
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
