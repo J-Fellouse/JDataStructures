@@ -63,3 +63,12 @@ std::cout << "key1 value : " << myHashmap.get("key1") << std::endl; //key1 value
 * Add iterator
 * Add remove function
 * Create a table specifying the performance of the data structure in big O notation.
+
+## TODO
+* Vector (dynamic array)
+* Binary tree
+* Tiered vector
+* Gap buffer
+* Hashed array tree
+* Red-black tree (used by std::map)
+* B-tree
