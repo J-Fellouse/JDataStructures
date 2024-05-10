@@ -9,9 +9,9 @@ Implementing my own data structures in C++ for learning purposes.
 5. At the root of the repository directory, type the command : ```cmake --build build```.
 
 ## Linked list
-I've implemented a linked list with knowledge of the end, i.e. the complexity of adding an element at the end is not O(n) but O(1).
+A linked list with knowledge of the end, i.e. the complexity of adding an element at the end is not O(n) but O(1).
 
-It is possible to iterate very simply through this linked list via the STL iterators end and begin, or simply via a for loop.
+It's possible to iterate very simply through this linked list via the STL iterators end and begin, or simply via a for loop.
 
 <ins>Example of usage :</ins>
 ```c++
