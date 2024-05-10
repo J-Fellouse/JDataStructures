@@ -10,7 +10,8 @@ set(CMAKE_CXX_STANDARD 23)
 include_directories(include)
 
 set(SOURCE_FILES
- "src/main.cpp")
+"src/main.cpp"
+"include/LinkedList.hpp")
 
 add_executable(JDataStructures ${SOURCE_FILES})
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
