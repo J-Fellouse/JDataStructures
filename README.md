@@ -41,8 +41,8 @@ for(int i : myLinkedList)
 * Add remove_at_end method
 * Create a table specifying the performance of the data structure in big O notation.
 
-## Static hash table
-This data structure is called a static hash table because it's a classic hash table, but I just haven't yet implemented the ability to add elements on the fly like a dynamic array would do with a reallocation-copy.
+## Static hash map
+This data structure is called a static hash map because it's a classic hash map, but I just haven't yet implemented the ability to add elements on the fly like a dynamic array would do with a reallocation-copy.
 
 For the hash function I've used ``` (std::hash<Key>()(key) % hashMapLength) ```, the modulo is used to transform the hash given by std::hash (which is an unsigned int) into a numeric value 
 within the array limits.
